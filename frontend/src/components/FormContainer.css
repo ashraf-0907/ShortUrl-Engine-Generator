@@ -1,0 +1,98 @@
+/* FormContainer.css */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #333;
+  padding: 20px;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+}
+
+.form-container button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.form-container input,
+.form-container textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.form-container th,
+.form-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.p {
+  cursor: pointer;
+}
+
+.p:hover {
+  background-color: #a69292;
+}
+
+/* Add a custom scrollbar for the table */
+.form-container table {
+  overflow-y: hidden;
+}
+
+.form-container table tbody {
+  display: block;
+  max-height: 300px; /* Adjust the max-height as needed */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.form-container table thead,
+.form-container table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .form-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form-container button {
+    margin-top: 5px;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    margin-bottom: 5px;
+  }
+
+  .form-container th,
+  .form-container td {
+    padding: 6px;
+  }
+}

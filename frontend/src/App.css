@@ -1,0 +1,133 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* src/components/FormContainer.css */
+
+/* Basic reset for margin and padding */
+body, h1, p, input, button, table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+input {
+  background-color: white;;
+}
+
+/* Styling for the form container */
+.container {
+  /* Allow the container to grow or shrink based on content */
+  width: 480px;
+  height: auto;
+
+  /* Set a maximum width for larger screens */
+  max-width: 500px;
+  max-height: 700px;
+
+  /* Set a minimum width and height to ensure it's not too small */
+  min-width: 300px;
+  min-height: 300px;
+
+  /* Center the container horizontally */
+  margin: 25px auto;
+
+  /* Add padding and styling */
+  padding: 5px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the buttons */
+.container button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the text input fields */
+.container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: auto;
+}
+
+.container textarea {
+background-color: white;
+color: black;
+
+}
+
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+  .container {
+    width: 90%; /* Adjust the width for smaller screens */
+    max-width: none; /* Remove the max-width restriction */
+  }
+}
+
+/* Styling for the table */
+.container table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+/* Styling for table headers */
+.container th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* Styling for table cells */
+.container td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 15px;
+}
+
+h2{
+  font-size: 35px;
+}
